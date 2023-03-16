@@ -1,39 +1,53 @@
-const cal = document.querySelector('.cal');
-const result = document.querySelector('#result');
+// const cal = document.querySelector('.cal');
+// const result = document.querySelector('#result');
 
-cal.addEventListener('click', function(event) {
-  if(!event.target.classList.contains('cal_btn')) return;
+// cal.addEventListener('click', function(event) {
+//   if(!event.target.classList.contains('cal_btn')) return;
 
-  const value = event.target.innerText;
+//   const value = event.target.innerText;
 
+ result.innerText = 'Введите пароль'
+class User {
+  numcard = []
+  password = []
  
+  name = "name"
+  lastname = "lastname"
 
-////////////////////////////////////////////////
-// class Math {
-//   // методы класса
-//   constructor() { ... }
+  constructor(numcard, password, name, lastname) {
+      this.numcard = numcard
+      this.password = password
+      this.name = name
+      this.lastname = lastname
+  }
+}
 
-//   factorial() { ... }
-//   degree() { ... }
-//   sqrt () { ... }
-//   ...
-// }
-///////////////////////////////////////////
-// class User {
+class Bank {
+  paymobile() {
+// проверка пароля на валидность
+  }   //оплата мобильной связи
 
-//   constructor(name) {
-//     this.name = name;
-//   }
+  cash () {} //снятие наличных
 
-//   sayHi() {
-//     alert(this.name);
-//   }
+  changpassword () {}  //изменение пароля
 
-// }
+  replenishment () {}  //пополнение счета
 
-// // Использование:
-// let user = new User("Иван");
-// user.sayHi();
-////////////////////////////////////////////////
+  balance () {}  //просмотр баланса
 
-});
+  entering_verifying () {}  //метод ввода и проверки корректности пароля
+
+}
+
+
+// let users = []
+
+let client1 = new User (7672432809812443234, 0000, "Bob", "Lees")
+let client2 = new User (3213544648678613649, 0011, "Kris", "Kool")
+
+
+
+
+
+
+
